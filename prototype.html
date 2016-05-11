@@ -40,11 +40,20 @@
 <body unresolved class="fullbleed">
   <paper-drawer-panel id="drawer_panel" disable-swipe force-narrow>
     <paper-header-panel drawer="" mode="seamed" at-top="">
-      <div id="drawer_content"></div>
+      <div id="drawer_content" style="border: none;"></div>
     </paper-header-panel>
     <paper-header-panel main="" mode="seamed" at-top="">
       <iron-pages id="app_content" attr-for-selected="id">
-        <section id="prueba"></section>
+        <section id="prueba">
+          <poly-fab icon="add" bottom_right="" link="" id="poly2" style="background-color: rgb(2, 119, 189);"></poly-fab>
+          <poly-toolbar id="poly4" style="background-color: rgb(198, 40, 40);">
+            <poly-icon-button icon="menu" src="" link="" id="poly4A" style="margin-right: 20px;"></poly-icon-button>
+            <poly-label text="Aplicación" size="paper-font-subhead" link="" id="poly4B" flex=""></poly-label>
+            <poly-icon-button icon="refresh" src="" link="" id="poly4C"></poly-icon-button>
+            <poly-icon-button icon="search" src="" link="" id="poly4D"></poly-icon-button>
+          </poly-toolbar>
+          <poly-card title="Título" image="http://placehold.it/350x150/eee/33000000" id="poly5"></poly-card>
+        </section>
       </iron-pages>
     </paper-header-panel>
   </paper-drawer-panel>
